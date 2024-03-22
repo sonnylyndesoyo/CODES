@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Flexbox</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .content{
+            border: 1px solid rgba(128, 128, 128, 0.574);
+            width: 80%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        .titles{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+        .a12{
+            display: grid;
+            grid-template-columns: 200px 75px;
+            height: 20px;
+        }
+        .content-a{
+            background-color: aquamarine;
+        }
+        .content-b{
+            background-color: pink;
+        }
+        .b12{
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            height: 20px;
+        }
+        .bcontent-a{
+            background-color: aquamarine;
+        }
+        .bcontent-b{
+            background-color: pink;
+        }
+        .c12{
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            height: 20px;
+            justify-content: space-between;
+        }
+        .ccontent{
+            background-color: pink;
+        }
+        .d12{
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            height: 20px;
+            justify-content: space-between;
+        }
+        .dcontent{
+            background-color: pink;
+        }
+        .navbar{
+            background-color: rgba(84, 106, 206, 0.749);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .navdiv1{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            font-weight: bold;
+        }
+        input{
+            width: 90%;
+            height: 25px;
+            border-radius: 30px;
+            border: none;
+            padding-left: 15px;
+        }
+        input::placeholder{
+            padding-left: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 2px;
+        }
+        button{
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            padding: 5px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+            transition: .3s ease-in-out;
+        }
+        button:active{
+            opacity: 50%;
+        }
+        .navdiv3{
+            padding-left: 18px;
+        }
+        .alert{
+            width: 27%;
+            border-radius: 7px;
+            display: grid;
+            grid-template-columns: 1fr 100px;
+            grid-template-rows: repeat(3,40px);
+            border: 1px solid rgba(128, 128, 128, 0.538);
+            box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.57);
+        }
+        .alert-content1{
+            font-family: Arial, Helvetica, serif;
+            font-size: medium;
+            font-weight: bold;
+            text-align: justify;
+            padding: 10px 15px;
+        }
+        .alert-content2{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+            flex-wrap: wrap;
+            justify-self: end;
+            padding-top: 13px;
+            padding-right: 9px;
+        }
+        span{
+            background-color: rgb(22, 92, 189);
+            padding: 5px 13px;
+            border-radius: 30px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="titles">
+            Task 12a
+        </p>
+        <div class="a12">
+            <div class="content-a">200px</div>
+            <div class="content-b">75px</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="titles">
+            Task 12b
+        </p>
+        <div class="b12">
+            <div class="bcontent-a">item1</div>
+            <div class="bcontent-b">item2</div>
+            <div class="bcontent-a">item3</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="titles">
+            Task 12c
+        </p>
+        <div class="c12">
+            <div class="ccontent">item1</div>
+            <div class="ccontent">item2</div>
+            <div class="ccontent">item3</div>
+            <div class="ccontent">item4</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="titles">
+            Task 12d
+        </p>
+        <div class="d12">
+            <div class="dcontent">item1</div>
+            <div class="dcontent">item2</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="titles">
+            Challenge 1
+        </p>
+        <div class="navbar">
+            <div class="navdiv1">Home</div>
+            <div class="navdiv2">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navdiv3">
+                <button onclick="alert('You have clicked this button!')">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="titles">
+            Challenge 2
+        </p>
+        <div class="alert">
+            <div class="alert-content1">Home</div>
+            <div class="alert-content2"><span>14</span></div>
+            <div class="alert-content1">Notifications</div>
+            <div class="alert-content2"><span>3</span></div>
+            <div class="alert-content1">Messages</div>
+            <div class="alert-content2"><span>5</span></div>
+        </div>
+    </div>
+</body>
+</html>
