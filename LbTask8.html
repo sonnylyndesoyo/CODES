@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px;
+            max-width: 900px;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(246, 235, 250, 0.702), rgba(228, 185, 255, 0.622));
+        }
+        nav{
+            height: 40px;
+            width: 900px;
+            background-color: lavender;
+            position: fixed;
+            z-index: 100;
+        }
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: black;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+        h1:hover{
+            color: #11bb5e84;
+        }
+        .btn1{
+            position: absolute;
+            top: 50px;
+            left: 52rem;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            border: none;
+            background-color: black;
+            color: #fff;
+            font-weight: 600;
+            transition: all ease-in-out .3s;
+            
+        }
+        .btn1:hover{
+            transform: scale(1.1);
+            transition: all ease-in-out .3s;
+            box-shadow: 0 5px 40px rgba(91, 45, 177, 0.28);
+        }
+        .product-container{
+            position: relative;
+            display: block;
+            margin-bottom: 2rem;
+        }
+        img{
+            width: 230px;
+            height: 240px;
+            position: relative;
+            top: 50px;
+            left: 20rem;
+            box-shadow: 0 5px 20px rgba(88, 76, 92, 0.836);
+            border-radius: 8px;
+        }
+        .sale {
+            position: absolute;
+            left: 470px;
+            top: 60px;
+            background-color: rgba(153, 47, 185, 0.766);
+            height: 30px;
+            width: 80px;
+            text-align: center;
+            transition: all ease-in-out .3s;
+            border-radius: 6px 0 0 6px;
+        }
+        .sale:hover{
+            transform: scale(1.1);
+            transition: all ease-in-out .3s;
+            border-radius: 6px;
+        }
+        p {
+            margin-top: 3px;
+            color: #fff;
+        }
+        .containerAddcart{
+            position: absolute;
+            top: 205px;
+            left: 320px;
+            background-color: #b3b3e2b5;
+            height: 85px;
+            width: 230px;
+            border-radius: 0 0 8px 8px;
+
+        }
+        .addcart{
+            font-size: 10px;
+            height: 30px;
+            width: 40%;
+            position: relative;
+            top: 25px;
+            left: 70px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 800;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+            transition: all ease-in-out .2s;
+        }
+        .addcart:hover{
+            box-shadow: 0 5px 50px rgba(141, 133, 145, 0.629);
+            transition: all ease-in-out .2s;
+            font-weight: 800;
+            background-color: #1d0415ab;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>    
+    <nav>
+        <h1>Sonny's Shop</h1>
+    </nav>
+            <button class="btn1">X</button>
+
+        <div class="product-container">
+            <div class="product">
+                <img src="./images/Shirt 1.jpg" alt="">
+                <div class="sale"><p>20% OFF</p></div>
+                <div class="containerAddcart">
+                    <button class="addcart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <img src="./images/Shirt 2.jpg" alt="">
+                <div class="sale"><p>20% OFF</p></div>
+                <div class="containerAddcart">
+                    <button class="addcart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product">
