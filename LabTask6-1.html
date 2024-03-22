@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+
+        body {
+            margin: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: grid;
+            place-items: center;
+        }
+        .input1, .num{
+            display: block;
+            margin: 10px;
+            padding: 5px;
+            width: 50%px;
+        }
+        .btn, .btn1, .P1{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+        }
+        .gen {
+            display: flex;
+            width: 20%;
+            height: 6%;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .num1{
+           padding: 20px;
+           width: 50%;
+           border-radius: 20px;
+           background-color: #fff;
+        }
+        .form1 {
+            display: inline-block;
+            margin: 0px;
+            padding: 4px;
+            border-radius: 9px;
+            margin-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            flex-direction: wrap;
+        }
+        .email1{
+            display: block;
+            height: 35px;
+            width: 342px;
+            margin-top: 10px;
+            padding: 4px;
+            border-radius: 9px;
+        }
+        .btnform{
+            padding: 4px;
+            margin-top: 10px;
+            padding: 15px;
+            width: 354px;
+            border-radius: 9px;
+            background-color: #4285F4;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        h1{
+            margin: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+        .loc{
+            display: block;
+            padding: 18px;
+            border-radius: 3px;
+            margin-top: 8px;
+            width: 354px;
+            border: none;
+            background-color: rgb(226, 226, 226);
+        }
+        .reqbtn {
+            display: inline-block;
+            padding: 16px;
+            margin-top: 38px;
+            background-color: black;
+            color: #fff;
+            border: none;
+        }
+        .schedbtn{
+            display: inline-block;
+            padding: 16px;
+            margin-top: 38px;
+            margin-left: 1rem;
+            background-color: rgb(226, 226, 226);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="input1">
+        <input type="text" id="name" placeholder="Name" class="num"/>
+        <input type="text " id="email" placeholder="Email" class="num"/>
+    </div>
+
+    <div class="btn">
+        <p class="P1">Thanks for chatting with our <br> customer support. Would you <br> like to take our quick survey?</p>
+        <button class="btn1">Yes</button>
+        <button class="btn1">No</button>
+    </div>
+    
+
+    <div class="gen">
+        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/351543828_282208284170903_2589767682266604638_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHifgaKuZJsiwgNH46_xOpYFV6VEIoXPakVXpUQihc9qbzpyDdsObtTmJ6Nql7zjxC0_qiIaHK8HUtwAaroQAsL&_nc_ohc=OKHr2dpXyEkAX_w5Way&_nc_ht=scontent.fcrk1-3.fna&oh=03_AdQcuVDCZ9fUjlHcmcBmSNOLXOfLBJGwGH8SV2nY8neB4A&oe=66091796" alt="">
+    </div>
+        <input type="text" id="name1" placeholder="Search Google or type URL" class="num1"/><br/>
+    
+    <h1>Sign Up Form</h1>
+    <div class="formgen">
+        <input type="text" id="first" placeholder="First name" class="form1"/>
+        <input type="text" id="first1" placeholder="First name" class="form1" />
+        <input type="text" id="email1" placeholder="Email" class="email1">
+        <button class="btnform">Sign Up</button>
+    </div>
+<br>
+    <h1>Request a ride now</h1>
+    <div class="formgen2"> 
+        <input type="text" id="location" placeholder="Enter pickup location" class="loc">
+        <input type="text" id="destination" placeholder="Enter destination" class="loc">
+        <button class="reqbtn">Request now</button>
+        <button class="schedbtn">Schedule for later</button>
+    </div>
+    
+
+</body>
+</html>
