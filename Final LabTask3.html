@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title> Lab Task 3</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            padding: 300px;
+        }
+        input, button {
+            margin: 3px;
+            padding: 10px;
+        }    
+    </style>
+</head>
+<body>
+    <fieldset id="fieldset">
+        <div>
+            <label for="firstNumber"><b>First Number:</b></label>
+            <input type="text" id="firstNumber">
+        </div>
+        <div>
+            <label for="secondNumber"><b>Second Number:</b></label>
+            <input type="text" id="secondNumber">
+        </div>
+        <div>
+            <label for="result"><b>RESULT:</b></label>
+            <input type="text" id="result" readonly>
+        </div>
+        <div>
+            <button onclick="addNumbers()" class="add">Addition</button>
+            <button onclick="subtractNumbers()" class="sub">Subtraction</button>
+            <button onclick="multiplyNumbers()" class="mult">Multiply</button>
+            <button onclick="divideNumbers()" class="div">Divide</button>
+            <button onclick="clearFields()" class="clear">Clear</button>
+            <button onclick="showAbout()" class="about">About</button>
+        </div>
+    </fieldset>
+
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById('firstNumber').value);
+            var num2 = parseFloat(document.getElementById('secondNumber').value);
+            document.getElementById('result').value = (num1 + num2).toFixed(2);
+        }
+        
+        function subtractNumbers() {
+            var num1 = parseFloat(document.getElementById('firstNumber').value);
+            var num2 = parseFloat(document.getElementById('secondNumber').value);
+            document.getElementById('result').value = (num1 - num2).toFixed(2);
+        }
+        
+        function multiplyNumbers() {
+            var num1 = parseFloat(document.getElementById('firstNumber').value);
+            var num2 = parseFloat(document.getElementById('secondNumber').value);
+            document.getElementById('result').value = (num1 * num2).toFixed(2);
+        }
+        
+        function divideNumbers() {
+            var num1 = parseFloat(document.getElementById('firstNumber').value);
+            var num2 = parseFloat(document.getElementById('secondNumber').value);
+            var result = num2 !== 0 ? (num1 / num2) : 'Infinity';
+            document.getElementById('result').value = result.toFixed(2);
+        }
+        
+        function clearFields() {
+            document.getElementById('firstNumber').value = '';
+            document.getElementById('secondNumber').value = '';
+            document.getElementById('result').value = '';
+        }
+        
+        function showAbout() {
+            alert('This is a calculator');
+        }
+    </script>
+</body>
+</html>
